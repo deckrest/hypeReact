@@ -1,0 +1,142 @@
+
+.festival-container {
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Хедер */
+  .festival-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+  }
+
+
+  .festival-header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Герой-секция */
+
+  .festival-main{
+    height: 100vh;
+    background-image: url('../../assets/image.png');
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .festival-main h1, .festival-main h2 {
+    font-weight: 10;
+    font-size: 7rem;
+    margin: 5px 0;
+  }
+  .festival-register {
+    margin-top: 5rem;
+    border-radius: 56px;
+    font-size: 4rem;
+    background-image: linear-gradient(to right, #FF35A4, #8A064F);
+    padding: 1rem 10rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+  .festival-register:hover{
+    box-shadow: #FF35A4 0 0 5rem 0;
+  }
+  
+  /* Слайдер */
+  .festival-slider {
+    background-image: linear-gradient(to bottom, #FF35A4, #8A064F);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  
+  .slider-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider-image {
+    width: 28rem;
+    height: 28rem;
+    object-fit: cover;
+    margin: 4rem;
+  }
+  
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+  }
+  
+  .slider-btn.left {
+    left: 10px;
+  }
+  
+  .slider-btn.right {
+    right: 10px;
+  }
+  
+  /* Информация о фестивале */
+  .festival-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .info-text, .info-contact {
+    width: 45%;
+  }
+  
+  /* Секция FAQ */
+  .festival-faq h3 {
+    margin-bottom: 15px;
+  }
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .faq-item {
+    background-color: #880e4f;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .faq-answer {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
